@@ -34,7 +34,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.5.1",
     "minimist": "^1.2.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "tailwindcss-border-gradients": "^2.0.3"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.1",
