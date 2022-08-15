@@ -36,6 +36,9 @@ module.exports = {
       },
     },
     extend: {
+      padding: {
+        18: '4.5rem',
+      },
       colors: {
         primary: {
           DEFAULT: '#62DB54',
@@ -61,7 +64,7 @@ module.exports = {
   },
   variants: {
     linearBorderGradients: ['responsive'], // defaults to ['responsive']
-    repeatingLinearBorderGradients: ['responsive'], // 
+    repeatingLinearBorderGradients: ['responsive'], //
   },
   plugins: [
     require('@tailwindcss/forms'),
@@ -82,6 +85,23 @@ module.exports = {
           },
         },
       });
+    },
+    function ({matchUtilities, theme}) {
+      matchUtilities(
+        {
+          'bg-gradient': (angle) => ({
+            'background-image': `linear-gradient(${angle}, var(--tw-gradient-stops))`,
+          }),
+        },
+        {
+          values: Object.assign(theme('bgGradientDeg', {}), {
+            104: '104deg',
+            107: '107deg',
+            99: '99deg',
+            102: '102deg',
+          }),
+        }
+      );
     },
   ],
 };
