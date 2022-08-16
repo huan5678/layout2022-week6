@@ -11,9 +11,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '0.75rem',
-        sm: '2rem',
-        lg: '4.5rem',
+        sm: '0.75rem',
       },
     },
     fontFamily: {
@@ -75,13 +73,13 @@ module.exports = {
         '.container': {
           maxWidth: '100%',
           '@screen sm': {
-            maxWidth: '744px',
+            maxWidth: '768px',
           },
           '@screen md': {
-            maxWidth: '960px',
+            maxWidth: '984px',
           },
           '@screen lg': {
-            maxWidth: '1296px',
+            maxWidth: '1320px',
           },
         },
       });

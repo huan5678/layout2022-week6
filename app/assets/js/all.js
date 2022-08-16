@@ -11,3 +11,22 @@ $('[data-toggle="menu"]').on('click', () => {
     return (state = 'open');
   }
 });
+
+const swiper = new Swiper('.swiperContainer', {
+  slidesPerView: 3.2,
+  spaceBetween: 8,
+  breakpoints: {
+    768: {
+      slidesPerView: 4.2,
+      spaceBetween: 12,
+    },
+    992: {
+      slidesPerView: 6.2,
+      spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 10.2,
+      spaceBetween: 16,
+    },
+  },
+});
