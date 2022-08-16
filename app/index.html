@@ -6,7 +6,7 @@ current: index
 ---
 
 <section
-  class="bg-[#1c1c1c] bg-[url(../images/bg_home_mobile.jpg)] bg-no-repeat bg-center bg-contain min-h-[21rem] flex justify-center items-center lg:bg-[url(../images/bg_home.jpg)]"
+  class="bg-dark bg-[url(../images/bg_home_mobile.jpg)] bg-no-repeat bg-center bg-contain min-h-[21rem] flex justify-center items-center lg:bg-[url(../images/bg_home.jpg)]"
 >
   <div class="container">
     <div class="relative py-8 border border-white text-center text-white lg:w-1/2 lg:mx-auto">
@@ -87,7 +87,7 @@ current: index
     <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
       <li class="py-12 pl-12 mt-7 rounded-xl border border-white">
         <div
-          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['01'] before:-translate-y-full before:bg-[#1c1c1c]"
+          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['01'] before:-translate-y-full before:bg-dark"
         >
           <h3 class="text-2xl font-bold mb-4">預約</h3>
           <p class="text-lg">
@@ -98,7 +98,7 @@ current: index
       </li>
       <li class="py-12 pl-12 mt-7 rounded-xl border border-white">
         <div
-          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['02'] before:-translate-y-full before:bg-[#1c1c1c]"
+          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['02'] before:-translate-y-full before:bg-dark"
         >
           <h3 class="text-2xl font-bold mb-4">付款</h3>
           <p class="text-lg">
@@ -109,7 +109,7 @@ current: index
       </li>
       <li class="py-12 pl-12 mt-7 rounded-xl border border-white">
         <div
-          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['03'] before:-translate-y-full before:bg-[#1c1c1c]"
+          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['03'] before:-translate-y-full before:bg-dark"
         >
           <h3 class="text-2xl font-bold mb-4">上課</h3>
           <p class="text-lg">
@@ -120,7 +120,7 @@ current: index
       </li>
       <li class="py-12 pl-12 mt-7 rounded-xl border border-white">
         <div
-          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['04'] before:-translate-y-full before:bg-[#1c1c1c]"
+          class="relative before:absolute before:top-0 before:left-0 before:-translate-x-3 before:pb-4 before:font-bold before:text-5xl before:leading-normal before:text-primary before:px-2 before:content-['04'] before:-translate-y-full before:bg-dark"
         >
           <h3 class="text-2xl font-bold mb-4">提供滿意度</h3>
           <p class="text-lg">
@@ -208,11 +208,11 @@ current: index
     >
       熱門推薦課程
     </h2>
-    <ul class="grid lg:grid-cols-4 gap-4 text-white">
+    <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-white">
       <li
-        class="pt-6 pb-4 rounded-3xl bg-gray transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
       >
-        <div class="px-8 mb-4">
+        <div class="px-8">
           <img
             src="./assets/images/teacher01.jpg"
             alt="Belinda"
@@ -220,6 +220,8 @@ current: index
           />
           <h4 class="mb-6 text-center">Belinda</h4>
           <h3 class="text-xl font-bold mb-2">基礎前端 - HTML</h3>
+        </div>
+        <div class="px-8 mb-4 lg:mb-8">
           <h4 class="text-primary mb-2">前端語言</h4>
           <p>
             帶領無基礎的平民老百姓，從最基礎的 HTML
@@ -231,9 +233,9 @@ current: index
         </h3>
       </li>
       <li
-        class="pt-6 pb-4 rounded-3xl bg-gray transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
       >
-        <div class="px-8 mb-4">
+        <div class="px-8">
           <img
             src="./assets/images/teacher02.jpg"
             alt="Guava"
@@ -241,6 +243,8 @@ current: index
           />
           <h4 class="mb-6 text-center">Guava</h4>
           <h3 class="text-xl font-bold mb-2">2022 Python 全攻略｜從入門到實務</h3>
+        </div>
+        <div class="px-8 mb-4 lg:mb-8">
           <h4 class="text-primary mb-2">後端語言</h4>
           <p class="">
             Python支援多種程式設計範式，包括
@@ -252,16 +256,18 @@ current: index
         </h3>
       </li>
       <li
-        class="pt-6 pb-4 rounded-3xl bg-gray transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
       >
-        <div class="px-8 mb-4">
-          <img
-            src="./assets/images/teacher03.jpg"
-            alt="Joe"
-            class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
-          />
-          <h4 class="mb-6 text-center">Joe</h4>
-          <h3 class="text-xl font-bold mb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
+      <div class="px-8">
+        <img
+          src="./assets/images/teacher03.jpg"
+          alt="Joe"
+          class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
+        />
+        <h4 class="mb-6 text-center">Joe</h4>
+        <h3 class="text-xl font-bold mb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
+      </div>
+        <div class="px-8 mb-4 lg:mb-8">
           <h4 class="text-primary mb-2">行動應用開發</h4>
           <p>
             Line Bot 可用於實用的目的，如客戶
@@ -273,16 +279,18 @@ current: index
         </h3>
       </li>
       <li
-        class="pt-6 pb-4 rounded-3xl bg-gray transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
       >
-        <div class="px-8 mb-4">
-          <img
-            src="./assets/images/teacher04.jpg"
-            alt="Lina"
-            class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
-          />
-          <h4 class="mb-6 text-center">Lina</h4>
-          <h3 class="text-xl font-bold mb-2">Linux 零基礎七天入門｜入門到實務</h3>
+      <div class="px-8">
+        <img
+          src="./assets/images/teacher04.jpg"
+          alt="Lina"
+          class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
+        />
+        <h4 class="mb-6 text-center">Lina</h4>
+        <h3 class="text-xl font-bold mb-2">Linux 零基礎七天入門｜入門到實務</h3>
+      </div>
+        <div class="px-8 mb-4 lg:mb-8">
           <h4 class="text-primary mb-2">作業系統與伺服器</h4>
           <p>
             Linux是一種自由和開放原始碼的類 UNIX
@@ -295,7 +303,7 @@ current: index
       </li>
     </ul>
     <div class="text-center">
-      <button type="button" class="rounded-lg bg-gradient-to-r from-secondary to-primary py-2 px-8">
+      <button type="button" class="rounded-lg bg-gradient-to-r from-secondary to-primary py-2 px-8" onClick="location.href='./class.html'">
         所有課程列表
       </button>
     </div>
@@ -304,7 +312,7 @@ current: index
 <section>
   <ul class="grid lg:grid-cols-4 place-content-center">
     <li
-      class="relative z-0 bg-[url(../images/info01.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-[#1c1c1c] after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
+      class="relative z-0 bg-[url(../images/info01.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-dark after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
     >
       <i
         class="material-icons text-primary text-[2rem] leading-none text-center mb-4 transition duration-300 lg:text-left lg:text-white lg:opacity-50 lg:group-hover:opacity-100 lg:group-hover:text-primary"
@@ -322,7 +330,7 @@ current: index
       </p>
     </li>
     <li
-      class="relative z-0 bg-[url(../images/info02.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-[#1c1c1c] after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
+      class="relative z-0 bg-[url(../images/info02.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-dark after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
     >
       <i
         class="material-icons text-primary text-[2rem] leading-none text-center mb-4 transition duration-300 lg:text-left lg:text-white lg:opacity-50 lg:group-hover:opacity-100 lg:group-hover:text-primary"
@@ -340,7 +348,7 @@ current: index
       </p>
     </li>
     <li
-      class="relative z-0 bg-[url(../images/info03.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-[#1c1c1c] after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
+      class="relative z-0 bg-[url(../images/info03.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-dark after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
     >
       <i
         class="material-icons text-primary text-[2rem] leading-none text-center mb-4 transition duration-300 lg:text-left lg:text-white lg:opacity-50 lg:group-hover:opacity-100 lg:group-hover:text-primary"
@@ -358,7 +366,7 @@ current: index
       </p>
     </li>
     <li
-      class="relative z-0 bg-[url(../images/info04.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-[#1c1c1c] after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
+      class="relative z-0 bg-[url(../images/info04.jpg)] bg-no-repeat bg-cover bg-center py-10 px-18 group grid place-content-center after:transition after:duration-300 after:absolute after:inset-0 after:bg-dark after:bg-opacity-90 after:-z-[1] lg:min-h-[38.4375rem] lg:hover:after:bg-opacity-[12%]"
     >
       <i
         class="material-icons text-primary text-[2rem] leading-none text-center mb-4 transition duration-300 lg:text-left lg:text-white lg:opacity-50 lg:group-hover:opacity-100 lg:group-hover:text-primary"
@@ -385,7 +393,7 @@ current: index
   </h2>
   <ul class="grid lg:grid-cols-3 gap-6">
     <li
-      class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:group lg:before:bg-[#1c1c1c] lg:after:bg-[#1c1c1c] lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
+      class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:group lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
     >
       <img src="./assets/images/article01.jpg" class="lg:z-[1] lg:relative" alt="article01" />
       <h3 class="text-lg font-bold lg:z-[1] lg:relative">2022 前端開發者學習地圖</h3>
@@ -395,7 +403,7 @@ current: index
       <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
     </li>
     <li
-      class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-[#1c1c1c] lg:after:bg-[#1c1c1c] lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
+      class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
     >
       <img src="./assets/images/article02.jpg" class="lg:z-[1] lg:relative" alt="article02" />
       <h3 class="text-lg font-bold lg:z-[1] lg:relative">軟體工程師有哪些類別</h3>
@@ -405,7 +413,7 @@ current: index
       <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
     </li>
     <li
-      class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-[#1c1c1c] lg:after:bg-[#1c1c1c] lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
+      class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
     >
       <img src="./assets/images/article03.jpg" class="lg:z-[1] lg:relative" alt="article03" />
       <h3 class="text-lg font-bold lg:z-[1] lg:relative">免費 25 小時前端教學資源</h3>

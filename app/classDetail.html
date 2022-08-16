@@ -5,56 +5,241 @@ engine: ejs
 current: class-detail
 ---
 
-<ul class="py-10 container flex flex-col gap-10">
-  <li class="pt-6 pb-12 px-6 rounded-3xl bg-gray">
+<div class="py-10 container flex flex-col gap-10 lg:flex-row lg:gap-6 lg:items-start">
+  <div class="flex flex-col gap-10 lg:push-1/12">
+    <div class="pt-6 pb-12 px-6 rounded-3xl bg-gray">
+          <img
+            src="./assets/images/teacher01.jpg"
+            alt="Belinda"
+            class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
+          />
+          <h3 class="mb-5 text-center">Belinda</h3>
+          <h2 class="text-xl font-bold mb-1">基礎前端 - HTML</h2>
+          <h3 class="text-primary mb-2">前端語言</h3>
+          <p>
+            帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。
+          </p>
+      </div>
+      <div>
+        <h2 class="mb-4 text-xl">老師介紹</h2>
+        <div class="p-6 rounded-3xl bg-gray">
+          <ul class="flex flex-col gap-4 border-b border-white pb-6 mb-6">
+            <li class="flex gap-2">
+              <i class="material-icons text-primary text-2xl leading-none">school</i>
+              <h3 class="text-gray-light">學歷</h3>
+              <p>國立中央大學 資訊工程 碩士 畢業</p>
+            </li>
+            <li class="flex gap-2">
+              <i class="material-icons text-primary text-2xl leading-none">business_center</i>
+              <h3 class="text-gray-light">經歷</h3>
+              <p>2020.08 - 迄今 上市企業 韌體工程師</p>
+            </li>
+            <li class="flex gap-2">
+              <i class="material-icons text-primary text-2xl leading-none">translate</i>
+              <h3 class="text-gray-light">語言</h3>
+              <p>中文/英文</p>
+            </li>
+            <li class="flex gap-2">
+              <i class="material-icons text-primary text-2xl leading-none">military_tech</i>
+              <h3 class="text-gray-light">等級</h3>
+              <p>入門</p>
+            </li>
+          </ul>
+          <p>
+            目前任職於上市企業 韌體工程師，撰寫各種微控制器韌體程式，如作業系統、系統軟體、裝置控制程式、驅動程式、網路應用程式、系統整合程式、數位訊號處理程式等。
+            <br /><br />
+            興趣是幫助他人學習程式語言，我相信，透過清楚的講解與示範，任何人都可以學好編寫程式與電腦科學中的複雜概念
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="mb-4 text-xl">課程簡介</h2>
+        <div class="p-6 rounded-3xl bg-gray">
+          <h3 class="text-lg pl-2 relative mb-4 before:absolute before:w-[2px] before:h-full before:left-0 before:-translate-x-[2px] before:bg-primary">這堂課你將會學到：</h3>
+          <ul class="mb-8">
+            <li class="relative pl-2 before:absolute before:w-[5px] before:h-[5px] before:left-0 before:-translate-x-[5px] before:top-1/2 before:-translate-y-1/2 before:bg-primary">
+              網頁設計，基礎知識
+            </li>
+            <li class="relative pl-2 before:absolute before:w-[5px] before:h-[5px] before:left-0 before:-translate-x-[5px] before:top-1/2 before:-translate-y-1/2 before:bg-primary">
+              HTML 語法，概念實作能力
+            </li>
+            <li class="relative pl-2 before:absolute before:w-[5px] before:h-[5px] before:left-0 before:-translate-x-[5px] before:top-1/2 before:-translate-y-1/2 before:bg-primary">
+              CSS , Javascript 概念與知識
+            </li>
+            <li class="relative pl-2 before:absolute before:w-[5px] before:h-[5px] before:left-0 before:-translate-x-[5px] before:top-1/2 before:-translate-y-1/2 before:bg-primary">
+              能做出一個基礎的HTML 網頁
+            </li>
+          </ul>
+          <h3 class="text-lg pl-2 relative mb-8 before:absolute before:w-[2px] before:h-full before:left-0 before:-translate-x-[2px] before:bg-primary">什麼是 HTML，為什麼要打造網頁，就一定要先學它？</h3>
+          <p class="">HTML元素是構建網站的基石。HTML允許嵌入圖像與物件，並且可以用於建立互動式表單，它被用來結構化資訊——例如標題、段落和列表等等，也可用來在一定程度上描述文件的外觀和語意。<br /><br />
+            當你掌握了HTML，就可以開始規劃並建置你想要的網頁內容 !</p>
+        </div>
+      </div>
+  </div>
+  <div class="relative py-10 px-6 bg-gray border border-white lg:w-1/3 lg:sticky lg:top-20">
+    <span
+      class="before:absolute before:top-0 before:left-0 before:w-[0.625rem] before:h-[0.625rem] before:bg-white before:-translate-x-1/2 before:-translate-y-1/2 after:absolute after:top-0 after:left-full after:w-[0.625rem] after:h-[0.625rem] after:bg-white after:-translate-x-1/2 after:-translate-y-1/2"
+    ></span>
+    <span
+      class="before:absolute before:top-full before:left-0 before:w-[0.625rem] before:h-[0.625rem] before:bg-white before:-translate-x-1/2 before:-translate-y-1/2 after:absolute after:top-full after:left-full after:w-[0.625rem] after:h-[0.625rem] after:bg-white after:-translate-x-1/2 after:-translate-y-1/2"
+    ></span>
+    <ul class="flex flex-col gap-4">
+      <li class="flex justify-between items-center pb-4 border-b border-white group cursor-pointer" onClick="location.href='order.html'">
+        <h3 class="text-2xl font-mono lg:group-hover:text-primary transition duration-300">
+          NT$1600
+          <span class="block text-base font-sans">1堂50分鐘</span>
+        </h3>
+        <button type="button" class="p-2 grid place-content-center rounded-full bg-gradient-to-b from-secondary to-primary">
+          <span class="material-icons text-base leading-none">
+            arrow_forward_ios
+          </span>
+        </button>
+      </li>
+      <li class="flex justify-between items-center pb-4 border-b border-white group cursor-pointer" onClick="location.href='order.html'">
+        <h3 class="text-2xl font-mono lg:group-hover:text-primary transition duration-300">
+          NT$1400
+          <span class="block text-base font-sans">3堂50分鐘</span>
+        </h3>
+        <button type="button" class="p-2 grid place-content-center rounded-full bg-gradient-to-b from-secondary to-primary">
+          <span class="material-icons text-base leading-none">
+            arrow_forward_ios
+          </span>
+        </button>
+      </li>
+      <li class="flex justify-between items-center pb-4 border-b border-white group cursor-pointer" onClick="location.href='order.html'">
+        <h3 class="text-2xl font-mono lg:group-hover:text-primary transition duration-300">
+          NT$1000
+          <span class="block text-base font-sans">1堂50分鐘</span>
+        </h3>
+        <button type="button" class="p-2 grid place-content-center rounded-full bg-gradient-to-b from-secondary to-primary">
+          <span class="material-icons text-base leading-none">
+            arrow_forward_ios
+          </span>
+        </button>
+      </li>
+      <li class="flex justify-between items-center pb-4 border-b border-white group cursor-pointer" onClick="location.href='order.html'">
+        <h3 class="text-2xl font-mono lg:group-hover:text-primary transition duration-300">
+          NT$900
+          <span class="block text-base font-sans">20堂50分鐘</span>
+        </h3>
+        <button type="button" class="p-2 grid place-content-center rounded-full bg-gradient-to-b from-secondary to-primary">
+          <span class="material-icons text-base leading-none">
+            arrow_forward_ios
+          </span>
+        </button>
+      </li>
+      <li class="flex justify-between items-center group cursor-pointer" onClick="location.href='order.html'">
+        <h3 class="text-2xl font-mono lg:group-hover:text-primary transition duration-300">
+          洽談報價
+          <span class="block text-base font-sans">客製化課程/專案製作</span>
+        </h3>
+        <button type="button" class="p-2 grid place-content-center rounded-full bg-gradient-to-b from-secondary to-primary">
+          <span class="material-icons text-base leading-none">
+            arrow_forward_ios
+          </span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<section class="py-10 bg-black">
+   <h2
+      class="pb-4 mb-6 text-center text-2xl font-bold relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[3.125rem] after:h-[0.1875rem] after:bg-primary lg:mb-12"
+    >
+      其他人也看了這些課程
+    </h2>
+    <ul class="container grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <li
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+      >
+        <div class="px-8">
+          <img
+            src="./assets/images/teacher01.jpg"
+            alt="Belinda"
+            class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
+          />
+          <h4 class="mb-6 text-center">Belinda</h4>
+          <h3 class="text-xl font-bold mb-2">基礎前端 - HTML</h3>
+        </div>
+        <div class="px-8 mb-4 lg:mb-8">
+          <h4 class="text-primary mb-2">前端語言</h4>
+          <p>
+            帶領無基礎的平民老百姓，從最基礎的 HTML
+            語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入...
+          </p>
+        </div>
+        <h3 class="text-4xl leading-none font-mono text-center border-t border-white pt-4">
+          <span class="font-sans text-base mr-2">50分鐘</span>NT$1600
+        </h3>
+      </li>
+      <li
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+      >
+        <div class="px-8">
+          <img
+            src="./assets/images/teacher02.jpg"
+            alt="Guava"
+            class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
+          />
+          <h4 class="mb-6 text-center">Guava</h4>
+          <h3 class="text-xl font-bold mb-2">2022 Python 全攻略｜從入門到實務</h3>
+        </div>
+        <div class="px-8 mb-4 lg:mb-8">
+          <h4 class="text-primary mb-2">後端語言</h4>
+          <p class="">
+            Python支援多種程式設計範式，包括
+            函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系...
+          </p>
+        </div>
+        <h3 class="text-4xl leading-none font-mono text-center border-t border-white pt-4">
+          <span class="font-sans text-base mr-2">50分鐘</span>NT$2200
+        </h3>
+      </li>
+      <li
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+      >
+      <div class="px-8">
         <img
-          src="./assets/images/teacher01.jpg"
-          alt="Belinda"
+          src="./assets/images/teacher03.jpg"
+          alt="Joe"
           class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
         />
-        <h3 class="mb-5 text-center">Belinda</h3>
-        <h2 class="text-xl font-bold mb-1">基礎前端 - HTML</h2>
-        <h3 class="text-primary mb-2">前端語言</h3>
-        <p>
-          帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。
-        </p>
-    </li>
-    <li>
-      <h2 class="mb-4 text-xl">老師介紹</h2>
-      <div class="p-6 rounded-3xl bg-gray">
-        <ul class="flex flex-col gap-4 border-b border-white pb-6 mb-6">
-          <li class="flex gap-2">
-            <i class="material-icons text-primary text-2xl leading-none">school</i>
-            <h3 class="text-gray-light">學歷</h3>
-            <p>國立中央大學 資訊工程 碩士 畢業</p>
-          </li>
-          <li class="flex gap-2">
-            <i class="material-icons text-primary text-2xl leading-none">business_center</i>
-            <h3 class="text-gray-light">經歷</h3>
-            <p>2020.08 - 迄今 上市企業 韌體工程師</p>
-          </li>
-          <li class="flex gap-2">
-            <i class="material-icons text-primary text-2xl leading-none">translate</i>
-            <h3 class="text-gray-light">語言</h3>
-            <p>中文/英文</p>
-          </li>
-          <li class="flex gap-2">
-            <i class="material-icons text-primary text-2xl leading-none">military_tech</i>
-            <h3 class="text-gray-light">等級</h3>
-            <p>入門</p>
-          </li>
-        </ul>
-        <p>
-          目前任職於上市企業 韌體工程師，撰寫各種微控制器韌體程式，如作業系統、系統軟體、裝置控制程式、驅動程式、網路應用程式、系統整合程式、數位訊號處理程式等。
-          <br /><br />
-          興趣是幫助他人學習程式語言，我相信，透過清楚的講解與示範，任何人都可以學好編寫程式與電腦科學中的複雜概念
-        </p>
+        <h4 class="mb-6 text-center">Joe</h4>
+        <h3 class="text-xl font-bold mb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
       </div>
-    </li>
-</ul>
-<section class="py-10 bg-black">
-  <h2 class="mb-4 text-xl">老師介紹</h2>
-  <div class="p-6 rounded-3xl bg-gray">
-    
-  </div>
+        <div class="px-8 mb-4 lg:mb-8">
+          <h4 class="text-primary mb-2">行動應用開發</h4>
+          <p>
+            Line Bot 可用於實用的目的，如客戶
+            服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的...
+          </p>
+        </div>
+        <h3 class="text-4xl leading-none font-mono text-center border-t border-white pt-4">
+          <span class="font-sans text-base mr-2">50分鐘</span>NT$1600
+        </h3>
+      </li>
+      <li
+        class="pt-6 pb-4 rounded-3xl bg-gray flex flex-col justify-between transition duration-300 border-2 border-transparent lg:hover:border-2 lg:hover:border-primary"
+      >
+      <div class="px-8">
+        <img
+          src="./assets/images/teacher04.jpg"
+          alt="Lina"
+          class="rounded-full max-w-[6.25rem] max-h-[6.25rem] object-cover mb-2 mx-auto"
+        />
+        <h4 class="mb-6 text-center">Lina</h4>
+        <h3 class="text-xl font-bold mb-2">Linux 零基礎七天入門｜入門到實務</h3>
+      </div>
+        <div class="px-8 mb-4 lg:mb-8">
+          <h4 class="text-primary mb-2">作業系統與伺服器</h4>
+          <p>
+            Linux是一種自由和開放原始碼的類 UNIX
+            作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。...
+          </p>
+        </div>
+        <h3 class="text-4xl leading-none font-mono text-center border-t border-white pt-4">
+          <span class="font-sans text-base mr-2">50分鐘</span>NT$1100
+        </h3>
+      </li>
+    </ul>
 </section>

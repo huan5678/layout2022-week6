@@ -10,9 +10,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: {
-        sm: '0.75rem',
-      },
+      padding: '0.75rem',
     },
     fontFamily: {
       sans: ['Noto Sans TC', ...fontFamily.sans],
@@ -34,6 +32,9 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        lg: ['1.125rem', '1.625rem'],
+      },
       padding: {
         18: '4.5rem',
       },
@@ -50,6 +51,7 @@ module.exports = {
           DEFAULT: '#2D2D2D',
           dark: '#202020',
         },
+        dark: '#1c1c1c',
         backdrop: '#00000062',
       },
       linearBorderGradients: {
@@ -65,9 +67,10 @@ module.exports = {
     repeatingLinearBorderGradients: ['responsive'], //
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('tailwindcss-border-gradients')(),
+    require('tailwind-scrollbar-hide'),
     function ({addComponents}) {
       addComponents({
         '.container': {

@@ -30,3 +30,29 @@ const swiper = new Swiper('.swiperContainer', {
     },
   },
 });
+
+let loginModal = false;
+
+$('#login').on('click', () => {
+  if (!loginModal) {
+    $('#loginModal').removeClass('hidden');
+    $('body').addClass('overflow-hidden');
+    loginModal = true;
+  } else {
+    $('#loginModal').addClass('hidden');
+    $('body').removeClass('overflow-hidden');
+    loginModal = false;
+  }
+});
+
+$('#ModalCloseButton').on('click', () => {
+  $('#loginModal').addClass('hidden');
+  $('body').removeClass('overflow-hidden');
+  loginModal = false;
+});
+
+$('[data-target="backdrop"]').on('click', () => {
+  $('#loginModal').addClass('hidden');
+  $('body').removeClass('overflow-hidden');
+  loginModal = false;
+});
