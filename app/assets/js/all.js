@@ -56,3 +56,13 @@ $('[data-target="backdrop"]').on('click', () => {
   $('body').removeClass('overflow-hidden');
   loginModal = false;
 });
+
+
+$('[data-dropdown-toggle="dropdown"]').on('click', () => {
+  $('#dropdown').toggleClass('hidden');
+});
+
+
+const elem = document.querySelector('input[name="bookingDate"]');
+const datepicker = new Datepicker(elem, {
+});
