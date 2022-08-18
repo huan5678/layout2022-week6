@@ -82,3 +82,13 @@
     }
   }
 }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 1rem;
+  border-radius: 4px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #62DB54;
+  opacity: 1;
+}

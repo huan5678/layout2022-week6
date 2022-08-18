@@ -12,7 +12,7 @@ $('[data-toggle="menu"]').on('click', () => {
   }
 });
 
-const swiper = new Swiper('.swiperContainer', {
+const swiperClass = new Swiper('.swiperContainer', {
   slidesPerView: 3.2,
   spaceBetween: 8,
   breakpoints: {
@@ -28,6 +28,21 @@ const swiper = new Swiper('.swiperContainer', {
       slidesPerView: 10.2,
       spaceBetween: 16,
     },
+  },
+});
+
+const swiperShare = new Swiper('.swiper-share', {
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
@@ -57,11 +72,9 @@ $('[data-target="backdrop"]').on('click', () => {
   loginModal = false;
 });
 
-
 $('[data-dropdown-toggle="dropdown"]').on('click', () => {
   $('#dropdown').toggleClass('hidden');
 });
-
 
 const elem = document.querySelector('input[name="bookingDate"]');
 const datepicker = new Datepicker(elem, {
