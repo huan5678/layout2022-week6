@@ -1,10 +1,65 @@
----
-title: Coding Home - 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Home - 首頁</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <header
+      class="relative before:absolute before:top-full before:w-1/2 before:h-[2px] before:bg-primary after:absolute after:top-full after:w-1/2 after:right-0 after:h-[2px] after:bg-secondary select-none"
+    >
+      <div class="container flex justify-between items-center">
+        <h2 class="py-6">
+          <a href="./">
+            <picture>
+              <source media="(min-width:768px)" srcset="./assets/images/logo.svg" />
+              <img src="./assets/images/logo2.svg" alt="logo" class="h-6 md:h-[2.625rem] w-auto" />
+            </picture>
+          </a>
+        </h2>
+        <button
+          type="button"
+          class="block md:hidden text-primary transition duration-150 hover:scale-110 h-6"
+          data-toggle="menu"
+        >
+          <span class="material-icons-round text-2xl leading-none"> drag_handle </span>
+        </button>
+        <nav
+          class="nav__list fixed z-10 -translate-y-full max-h-0 overflow-y-hidden mt-[4.625rem] transition-all duration-300 bg-gray top-0 left-0 w-full flex flex-col md:relative md:mt-0 md:top-auto md:left-auto md:flex-row md:justify-end md:items-center md:translate-y-0 md:max-h-max md:bg-transparent"
+        >
+          <a
+            href="./index.html"
+            class="block pt-6 pb-3 md:px-6 text-center transition-all duration-300 bg-clip-text hover:text-transparent bg-gradient-to-r from-primary to-secondary md:py-3"
+            >首頁</a
+          >
+          <a
+            href="./class.html"
+            class="block py-3 md:px-6 text-center transition-all duration-300 bg-clip-text hover:text-transparent bg-gradient-to-r from-primary to-secondary md:py-3"
+            >課程介紹</a
+          >
+          <a
+            href="#" id="login"
+            class="pt-3 pb-6 md:px-6 flex justify-center items-center gap-[0.375rem] transition-all duration-300 bg-clip-text hover:text-transparent bg-gradient-to-r from-primary to-secondary md:py-3"
+          >
+            <span class="material-icons-round"> account_circle </span>
+            登入
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="select-none">
 <section
   class="bg-dark bg-[url(../images/bg_home_mobile.jpg)] bg-no-repeat bg-center bg-contain min-h-[21rem] flex justify-center items-center lg:bg-[url(../images/bg_home.jpg)]"
 >
@@ -132,7 +187,7 @@ current: index
     </ul>
   </div>
 </section>
-<section class="py-10 bg-gray lg:py-20">
+<section class="py-10 bg-gray lg:py-20 select-none">
   <h2
     class="pb-4 mb-6 text-center text-2xl font-bold relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[3.125rem] after:h-[0.1875rem] after:bg-primary lg:mb-12"
   >
@@ -303,7 +358,7 @@ current: index
       </li>
     </ul>
     <div class="text-center">
-      <button type="button" class="rounded-lg bg-gradient-to-r from-secondary to-primary py-2 px-8" onClick="location.href='./class.html'">
+      <button type="button" class="rounded-lg bg-gradient-to-r from-secondary to-primary py-2 px-8 transition duration-300 hover:brightness-110 hover:shadow hover:shadow-gray" onClick="location.href='./class.html'">
         所有課程列表
       </button>
     </div>
@@ -400,7 +455,7 @@ current: index
       <p class="lg:z-[1] lg:relative">
         轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
       </p>
-      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
+      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative group-hover:underline group-hover:underline-offset-2">MORE</a>
     </li>
     <li
       class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
@@ -410,7 +465,7 @@ current: index
       <p class="lg:z-[1] lg:relative">
         軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
       </p>
-      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
+      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative hover:underline hover:underline-offset-2">MORE</a>
     </li>
     <li
       class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
@@ -420,7 +475,7 @@ current: index
       <p class="lg:z-[1] lg:relative">
         這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
       </p>
-      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
+      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative group-hover:underline group-hover:underline-offset-2">MORE</a>
     </li>
   </ul>
 </section>
@@ -541,7 +596,72 @@ current: index
           <p class="lg:text-lg">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
         </div>
       </div>
-      <a href="/" class="block py-2 px-8 rounded-lg border border-white"> 立即預約 </a>
+      <a href="/" class="py-2 px-8 rounded-lg border border-white transition duration-300 hover:border-secondary hover:text-secondary"> 立即預約 </a>
     </div>
   </div>
 </section>
+</main>
+
+
+    <footer class="bg-[#1A1A1A] text-[#909090] text-center py-4 lg:py-6 font-mono select-none">
+      Coding Home © 2022 All Rights Reserved
+    </footer>
+    <div class="absolute inset-0 hidden" id="loginModal">
+      <div class="modal-overlay absolute w-full h-full bg-black opacity-[0.5] z-30" data-target="backdrop"></div>
+      <div class="container flex justify-center items-center h-full">
+        <section class="py-10 px-6 bg-gray border border-white z-30 relative w-[max(50%,20rem)] sm:w-2/3 md:w-1/2">
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold text-center">登入</h2>
+            <button id="ModalCloseButton" class="modal-close absolute top-0 right-0 -translate-x-6 translate-y-4 text-sm p-1 leading-none inline-block">
+              <span class="material-icons-round"> close </span>
+            </button>
+          </div>
+            <form class="flex flex-col gap-4 mb-6">
+                <label for="username" class="block">
+                  <span class="block text-gray-light mb-[0.375rem]">帳號</span>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="請輸入信箱"
+                    class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+                  />
+                </label>
+                <label for="password" class="block">
+                  <span class="block text-gray-light mb-[0.375rem]">密碼</span>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="請輸入密碼"
+                    class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+                  />
+                </label>
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-99 from-secondary to-primary rounded-lg py-2 px-4 lg:mb-8"
+                >
+                  登入
+                </button>
+                <div class="relative before:absolute before:w-full before:h-[1px] before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-gray-light before:-z-10">
+                  <h2 class="bg-gray w-min whitespace-nowrap mx-auto text-gray-light text-center px-4">
+                    其他登入方式
+                  </h2>
+                </div>
+                <button type="button" class="py-2 w-full flex justify-center items-center gap-8 border border-white rounded transition duration-300 lg:mb-2 hover:border-secondary hover:text-secondary">
+                  <img src="./assets/images/icon_fb.svg" class="w-6 h-6" alt="Facebook" />
+                  <span>Facebook 登入</span>
+                </button>
+                <button type="button" class="py-2 w-full flex justify-center items-center gap-8 border border-white rounded transition duration-300 lg:mb-2 hover:border-secondary hover:text-secondary">
+                  <img src="./assets/images/icon_google.svg" class="w-6 h-6" alt="Google" />
+                  <span>Google 登入</span>
+                </button>
+            </form>
+        </section>
+      </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

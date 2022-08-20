@@ -1,54 +1,53 @@
-let state = 'closed';
-$('[data-toggle="menu"]').on('click', () => {
+"use strict";
+
+var state = 'closed';
+$('[data-toggle="menu"]').on('click', function () {
   if (state === 'open') {
     $('.nav__list').addClass('max-h-0 -translate-y-full');
     $('[data-toggle="menu"]').children("span:contains('close')").text('drag_handle');
-    return (state = 'closed');
+    return state = 'closed';
   }
+
   if (state === 'closed') {
     $('.nav__list').removeClass('max-h-0 -translate-y-full');
     $('[data-toggle="menu"]').children("span:contains('drag_handle')").text('close');
-    return (state = 'open');
+    return state = 'open';
   }
 });
-
-const swiperClass = new Swiper('.swiperContainer', {
+var swiperClass = new Swiper('.swiperContainer', {
   slidesPerView: 3.2,
   spaceBetween: 8,
   breakpoints: {
     768: {
       slidesPerView: 4.2,
-      spaceBetween: 12,
+      spaceBetween: 12
     },
     992: {
       slidesPerView: 6.2,
-      spaceBetween: 16,
+      spaceBetween: 16
     },
     1440: {
       slidesPerView: 10.2,
-      spaceBetween: 16,
-    },
-  },
+      spaceBetween: 16
+    }
+  }
 });
-
-const swiperShare = new Swiper('.swiper-share', {
+var swiperShare = new Swiper('.swiper-share', {
   effect: 'fade',
   fadeEffect: {
-    crossFade: true,
+    crossFade: true
   },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    clickable: true
   },
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    prevEl: '.swiper-button-prev'
+  }
 });
-
-let loginModal = false;
-
-$('#login').on('click', () => {
+var loginModal = false;
+$('#login').on('click', function () {
   if (!loginModal) {
     $('#loginModal').removeClass('hidden');
     $('body').addClass('overflow-hidden');
@@ -59,23 +58,19 @@ $('#login').on('click', () => {
     loginModal = false;
   }
 });
-
-$('#ModalCloseButton').on('click', () => {
+$('#ModalCloseButton').on('click', function () {
   $('#loginModal').addClass('hidden');
   $('body').removeClass('overflow-hidden');
   loginModal = false;
 });
-
-$('[data-target="backdrop"]').on('click', () => {
+$('[data-target="backdrop"]').on('click', function () {
   $('#loginModal').addClass('hidden');
   $('body').removeClass('overflow-hidden');
   loginModal = false;
 });
-
-$('[data-dropdown-toggle="dropdown"]').on('click', () => {
+$('[data-dropdown-toggle="dropdown"]').on('click', function () {
   $('#dropdown').toggleClass('hidden');
 });
-
-const elem = document.querySelector('input[name="bookingDate"]');
-const datepicker = new Datepicker(elem, {
-});
+var elem = document.querySelector('input[name="bookingDate"]');
+var datepicker = new Datepicker(elem, {});
+//# sourceMappingURL=all.js.map

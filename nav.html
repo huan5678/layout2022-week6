@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
+    <title>Coding Home - 課程報名</title>
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
@@ -17,7 +17,7 @@
 
   <body>
     <header
-      class="relative before:absolute before:top-full before:w-1/2 before:h-[2px] before:bg-primary after:absolute after:top-full after:w-1/2 after:right-0 after:h-[2px] after:bg-secondary"
+      class="relative before:absolute before:top-full before:w-1/2 before:h-[2px] before:bg-primary after:absolute after:top-full after:w-1/2 after:right-0 after:h-[2px] after:bg-secondary select-none"
     >
       <div class="container flex justify-between items-center">
         <h2 class="py-6">
@@ -59,9 +59,50 @@
       </div>
     </header>
 
-    <%- contents %>
+    
+<main class="select-none">
+  <section class="pt-6 pb-[17.25rem] lg:pt-0 lg:pb-[8.4375rem] bg-black">
+    <div class="lg:bg-dark lg:pt-6 lg:pb-4 mb-6 lg:mb-12 container">
+      <div class="flex justify-center">
+        <div class="w-9/12 md:w-7/12 relative before:z-[1] before:absolute before:inline-block before:top-[0.625rem] before:left-0 before:right-0 before:h-[2px] before:bg-primary after:z-[1] after:absolute after:inline-block after:top-[0.625rem] after:right-0 after:h-[2px] after:w-1/2 after:bg-gray-light"></div>
+      </div>
+      <ul class="flex">
+        <li
+          class="w-3/12 lg:w-5/12"
+        >
+          <div class="relative bg-black lg:bg-dark text-center">
+            <span
+              class="material-icons text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
+              >done</span
+            >
+            <p class="block text-gray-light pt-6">課程報名</p>
+          </div>
+        </li>
+        <li class="w-1/2 lg:w-2/12">
+          <div class="relative bg-black lg:bg-dark text-center">
+            <span
+              class="material-icons text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
+              >done</span
+            >
+            <p class="block text-gray-light pt-6">信用卡付款</p>
+          </div>
+        </li>
+        <li class="w-3/12 lg:w-5/12">
+          <div class="relative bg-black lg:bg-dark text-center">
+            <span
+              class="material-icons text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
+              >done</span
+            >
+            <p class="block text-gray-light pt-6">付款成功</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
 
-    <footer class="bg-[#1A1A1A] text-[#909090] text-center py-4 lg:py-6 font-mono">
+
+    <footer class="bg-[#1A1A1A] text-[#909090] text-center py-4 lg:py-6 font-mono select-none">
       Coding Home © 2022 All Rights Reserved
     </footer>
     <div class="absolute inset-0 hidden" id="loginModal">
@@ -74,48 +115,46 @@
               <span class="material-icons-round"> close </span>
             </button>
           </div>
-            <form action="./order.html" method="post">
-              <div class="flex flex-col gap-4 mb-6">
+            <form class="flex flex-col gap-4 mb-6">
                 <label for="username" class="block">
-                  <span class="text-gray-light">帳號</span>
+                  <span class="block text-gray-light mb-[0.375rem]">帳號</span>
                   <input
                     type="text"
                     name="username"
                     id="username"
                     placeholder="請輸入信箱"
-                    class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light"
+                    class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
                   />
                 </label>
                 <label for="password" class="block">
-                  <span class="text-gray-light">密碼</span>
+                  <span class="block text-gray-light mb-[0.375rem]">密碼</span>
                   <input
                     type="password"
                     name="password"
                     id="password"
                     placeholder="請輸入密碼"
-                    class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light"
+                    class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
                   />
                 </label>
                 <button
                   type="submit"
-                  class="w-full bg-gradient-99 from-secondary to-primary rounded-lg py-2 px-4"
+                  class="w-full bg-gradient-99 from-secondary to-primary rounded-lg py-2 px-4 lg:mb-8"
                 >
                   登入
                 </button>
-              </div>
-              <div class="relative mb-4 before:absolute before:w-full before:h-[1px] before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-gray-light before:-z-10">
-                <h2 class="bg-gray w-min whitespace-nowrap mx-auto text-gray-light text-center px-4">
-                  其他登入方式
-                </h2>
-              </div>
-              <button type="button" class="py-2 w-full flex justify-center items-center gap-8 border border-white rounded mb-4">
-                <img src="./assets/images/icon_fb.svg" class="w-6 h-6" alt="Facebook" />
-                <span>Facebook 登入</span>
-              </button>
-              <button type="button" class="py-2 w-full flex justify-center items-center gap-8 border border-white rounded">
-                <img src="./assets/images/icon_google.svg" class="w-6 h-6" alt="Google" />
-                <span>Google 登入</span>
-              </button>
+                <div class="relative before:absolute before:w-full before:h-[1px] before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-gray-light before:-z-10">
+                  <h2 class="bg-gray w-min whitespace-nowrap mx-auto text-gray-light text-center px-4">
+                    其他登入方式
+                  </h2>
+                </div>
+                <button type="button" class="py-2 w-full flex justify-center items-center gap-8 border border-white rounded transition duration-300 lg:mb-2 hover:border-secondary hover:text-secondary">
+                  <img src="./assets/images/icon_fb.svg" class="w-6 h-6" alt="Facebook" />
+                  <span>Facebook 登入</span>
+                </button>
+                <button type="button" class="py-2 w-full flex justify-center items-center gap-8 border border-white rounded transition duration-300 lg:mb-2 hover:border-secondary hover:text-secondary">
+                  <img src="./assets/images/icon_google.svg" class="w-6 h-6" alt="Google" />
+                  <span>Google 登入</span>
+                </button>
             </form>
         </section>
       </div>
