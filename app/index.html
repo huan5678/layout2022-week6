@@ -4,7 +4,7 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
+<main class="select-none">
 <section
   class="bg-dark bg-[url(../images/bg_home_mobile.jpg)] bg-no-repeat bg-center bg-contain min-h-[21rem] flex justify-center items-center lg:bg-[url(../images/bg_home.jpg)]"
 >
@@ -132,7 +132,7 @@ current: index
     </ul>
   </div>
 </section>
-<section class="py-10 bg-gray lg:py-20">
+<section class="py-10 bg-gray lg:py-20 select-none">
   <h2
     class="pb-4 mb-6 text-center text-2xl font-bold relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[3.125rem] after:h-[0.1875rem] after:bg-primary lg:mb-12"
   >
@@ -303,7 +303,7 @@ current: index
       </li>
     </ul>
     <div class="text-center">
-      <button type="button" class="rounded-lg bg-gradient-to-r from-secondary to-primary py-2 px-8" onClick="location.href='./class.html'">
+      <button type="button" class="rounded-lg bg-gradient-to-r from-secondary to-primary py-2 px-8 transition duration-300 hover:brightness-110 hover:shadow hover:shadow-gray" onClick="location.href='./class.html'">
         所有課程列表
       </button>
     </div>
@@ -400,7 +400,7 @@ current: index
       <p class="lg:z-[1] lg:relative">
         轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
       </p>
-      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
+      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative group-hover:underline group-hover:underline-offset-2">MORE</a>
     </li>
     <li
       class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
@@ -410,7 +410,7 @@ current: index
       <p class="lg:z-[1] lg:relative">
         軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
       </p>
-      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
+      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative hover:underline hover:underline-offset-2">MORE</a>
     </li>
     <li
       class="space-y-4 lg:relative lg:p-8 lg:border lg:border-transparent lg:cursor-pointer lg:before:bg-dark lg:after:bg-dark lg:rounded-[1rem] lg:hover:border-primary lg:hover:before:absolute lg:hover:before:top-[-4px] lg:hover:before:bottom-[-4px] lg:hover:before:left-[2rem] lg:hover:before:right-[2rem] lg:hover:after:absolute lg:hover:after:left-[-4px] lg:hover:after:right-[-4px] lg:hover:after:top-[2rem] lg:hover:after:bottom-[2rem]"
@@ -420,7 +420,7 @@ current: index
       <p class="lg:z-[1] lg:relative">
         這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
       </p>
-      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative">MORE</a>
+      <a href="./" class="block text-right text-primary text-lg lg:z-[1] lg:relative group-hover:underline group-hover:underline-offset-2">MORE</a>
     </li>
   </ul>
 </section>
@@ -541,7 +541,8 @@ current: index
           <p class="lg:text-lg">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
         </div>
       </div>
-      <a href="/" class="block py-2 px-8 rounded-lg border border-white"> 立即預約 </a>
+      <a href="/" class="py-2 px-8 rounded-lg border border-white transition duration-300 hover:border-secondary hover:text-secondary"> 立即預約 </a>
     </div>
   </div>
 </section>
+</main>
