@@ -17,7 +17,7 @@
 
   <body>
     <header
-      class="relative before:absolute before:top-full before:w-1/2 before:h-[2px] before:bg-primary after:absolute after:top-full after:w-1/2 after:right-0 after:h-[2px] after:bg-secondary select-none"
+      class="fixed w-full top-0 left-0 bg-gray z-20 before:absolute before:top-full before:w-1/2 before:h-[2px] before:bg-primary after:absolute after:top-full after:w-1/2 after:right-0 after:h-[2px] after:bg-secondary select-none"
     >
       <div class="container flex justify-between items-center">
         <h2 class="py-6">
@@ -59,93 +59,93 @@
       </div>
     </header>
 
-    
-<main class="select-none">
-  <section class="py-6 lg:pt-0 lg:pb-20 bg-black">
-    <div class="lg:bg-dark lg:pt-6 lg:pb-4 mb-6 lg:mb-12">
-      <div class="container">
-        <div class="flex justify-center">
-          <div class="w-9/12 md:w-7/12 relative before:z-[1] before:absolute before:inline-block before:top-[0.625rem] before:left-0 before:right-0 before:h-[2px] before:bg-primary after:z-[1] after:absolute after:inline-block after:top-[0.625rem] after:right-0 after:h-[2px] after:w-1/2 after:bg-gray-light"></div>
-        </div>
-        <ul class="flex">
-          <li
-            class="w-3/12 lg:w-5/12"
-          >
-            <div class="relative bg-black lg:bg-dark text-center">
-              <span
-                class="material-icons text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
-                >done</span
-              >
-              <p class="block text-gray-light pt-6">課程報名</p>
-            </div>
-          </li>
-          <li class="w-1/2 lg:w-2/12">
-            <div class="relative bg-black lg:bg-dark text-center">
-              <span
-                class="text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
-                >2</span
-              >
-              <p class="block text-gray-light pt-6">信用卡付款</p>
-            </div>
-          </li>
-          <li class="w-3/12 lg:w-5/12">
-            <div class="relative bg-black lg:bg-dark text-center">
-              <span
-                class="text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-gray-light bg-black lg:bg-gray absolute left-1/2 -translate-x-1/2 z-[1]"
-                >3</span
-              >
-              <p class="block text-gray-light pt-6">付款成功</p>
-            </div>
-          </li>
-        </ul>
+    <main class="select-none pt-[5.625rem]">
+      
+<section class="py-6 lg:pt-0 lg:pb-20 bg-black">
+  <div class="lg:bg-dark lg:pt-6 lg:pb-4 mb-6 lg:mb-12">
+    <div class="container">
+      <div class="flex justify-center">
+        <div class="w-9/12 md:w-7/12 relative before:z-[1] before:absolute before:inline-block before:top-[0.625rem] before:left-0 before:right-0 before:h-[2px] before:bg-primary after:z-[1] after:absolute after:inline-block after:top-[0.625rem] after:right-0 after:h-[2px] after:w-1/2 after:bg-gray-light"></div>
       </div>
-    </div>
-    <div class="container flex justify-center items-center">
-      <form action="./payed.html" class="p-6 bg-gray text-center w-full lg:bg-gray-dark lg:py-12 lg:px-8 lg:w-1/3">
-        <h1 class="text-2xl font-bold mb-6 md:mb-8 lg:mb-12">信用卡付款</h1>
-          <h2 class="text-lg font-bold mb-4 lg:mb-6 lg:text-left">請輸入信用卡資訊進行付款</h2>
-          <div class="flex flex-col gap-4 mb-6">
-            <label for="userName" class="text-left text-gray-light">
-              <span class="block mb-2">信用卡帳號</span>
-              <input
-                id="ccn" type="tel" 
-                inputmode="numeric" 
-                pattern="[0-9\s]{13,19}" 
-                autocomplete="cc-number" 
-                maxlength="19" 
-                placeholder="xxxx-xxxx-xxxx-xxxx"
-                class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
-              />
-            </label>
-            <label for="cvc" class="text-left text-gray-light">
-              <span class="block mb-2">安全碼</span>
-              <input
-                id="cvc"
-                name="credit-cvc"
-                type="tel"
-                pattern="\d*"
-                maxlength="3"
-                placeholder="***"
-                class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
-              />
-            </label>
-            <label for="exp" class="text-left text-gray-light">
-              <span class="block mb-2">有效日期</span>
-              <input
-                id="exp"
-                name="expirationDate" type="text" placeholder="MM/YYYY"
-                class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
-              />
-            </label>
+      <ul class="flex">
+        <li
+          class="w-3/12 lg:w-5/12"
+        >
+          <div class="relative bg-black lg:bg-dark text-center">
+            <span
+              class="material-icons text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
+              >done</span
+            >
+            <p class="block text-gray-light pt-6">課程報名</p>
           </div>
-          <div class="lg:flex lg:justify-between lg:items-center">
-            <h3 class="text-left text-lg font-mono mb-6 lg:mb-0">NT$1600</h3>
-            <input type="submit" value="下一步" class="rounded-lg py-2 px-4 w-full bg-gradient-99 from-secondary to-primary cursor-pointer lg:w-[10.5rem] transition duration-300 hover:brightness-110 hover:shadow hover:shadow-gray">
-          </div></div>
-      </form>
-  </section>
-</main>
+        </li>
+        <li class="w-1/2 lg:w-2/12">
+          <div class="relative bg-black lg:bg-dark text-center">
+            <span
+              class="text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-primary bg-primary absolute left-1/2 -translate-x-1/2 z-[1]"
+              >2</span
+            >
+            <p class="block text-gray-light pt-6">信用卡付款</p>
+          </div>
+        </li>
+        <li class="w-3/12 lg:w-5/12">
+          <div class="relative bg-black lg:bg-dark text-center">
+            <span
+              class="text-xs leading-[0.875rem] h-5 w-5 grid place-content-center rounded-full border border-gray-light bg-black lg:bg-gray absolute left-1/2 -translate-x-1/2 z-[1]"
+              >3</span
+            >
+            <p class="block text-gray-light pt-6">付款成功</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex justify-center items-center">
+    <form action="./payed.html" class="p-6 bg-gray text-center w-full lg:bg-gray-dark lg:py-12 lg:px-8 lg:w-1/3">
+      <h1 class="text-2xl font-bold mb-6 md:mb-8 lg:mb-12">信用卡付款</h1>
+        <h2 class="text-lg font-bold mb-4 lg:mb-6 lg:text-left">請輸入信用卡資訊進行付款</h2>
+        <div class="flex flex-col gap-4 mb-6">
+          <label for="userName" class="text-left text-gray-light">
+            <span class="block mb-2">信用卡帳號</span>
+            <input
+              id="ccn" type="tel" 
+              inputmode="numeric" 
+              pattern="[0-9\s]{13,19}" 
+              autocomplete="cc-number" 
+              maxlength="19" 
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+              class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+            />
+          </label>
+          <label for="cvc" class="text-left text-gray-light">
+            <span class="block mb-2">安全碼</span>
+            <input
+              id="cvc"
+              name="credit-cvc"
+              type="tel"
+              pattern="\d*"
+              maxlength="3"
+              placeholder="***"
+              class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+            />
+          </label>
+          <label for="exp" class="text-left text-gray-light">
+            <span class="block mb-2">有效日期</span>
+            <input
+              id="exp"
+              name="expirationDate" type="text" placeholder="MM/YYYY"
+              class="w-full border border-white rounded py-2 px-4 bg-dark placeholder:text-gray-light focus-within:ring-primary focus-within:border-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+            />
+          </label>
+        </div>
+        <div class="lg:flex lg:justify-between lg:items-center">
+          <h3 class="text-left text-lg font-mono mb-6 lg:mb-0">NT$1600</h3>
+          <input type="submit" value="下一步" class="rounded-lg py-2 px-4 w-full bg-gradient-99 from-secondary to-primary cursor-pointer lg:w-[10.5rem] transition duration-300 hover:brightness-110 hover:shadow hover:shadow-gray">
+        </div></div>
+    </form>
+</section>
 
+    </main>
 
     <footer class="bg-[#1A1A1A] text-[#909090] text-center py-4 lg:py-6 font-mono select-none">
       Coding Home © 2022 All Rights Reserved
