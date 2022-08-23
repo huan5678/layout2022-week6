@@ -72,5 +72,9 @@ $('[data-dropdown-toggle="dropdown"]').on('click', function () {
   $('#dropdown').toggleClass('hidden');
 });
 var elem = document.querySelector('input[name="bookingDate"]');
-var datepicker = new Datepicker(elem, {});
+var datepicker = elem && new Datepicker(elem, {
+  language: 'zh-TW',
+  prevArrow: '<span class="material-icons-outlined">keyboard_double_arrow_left</span>',
+  nextArrow: '<span class="material-icons-outlined">keyboard_double_arrow_right</span>'
+});
 //# sourceMappingURL=all.js.map
